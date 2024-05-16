@@ -1,9 +1,18 @@
 const { createApp } = Vue
 
-  createApp({
-    data() {
-      return {
-        
-      }
+createApp({
+  data() {
+    return {
+
     }
-  }).mount('#app')
+  },
+  methods: {
+    axios() {
+      axios.get(/*INSERIRE INDIRIZZO API*/).then((/*ARGOMENTO FUNZIONE*/) => {
+      })
+    }
+  },
+  mounted() {
+    this.axios()
+  }
+}).mount('#app')
